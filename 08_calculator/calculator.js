@@ -18,8 +18,16 @@ const power = function (n1, n2) {
   return n1 ** n2;
 };
 
-const factorial = function() {
-	
+const factorial = function (n) {
+  // let factor = 1;
+  // if (n === 0) return factor;
+  // for (let i = 1; i <= n; i++) {
+  //   factor *= i;
+  // }
+  // return factor;
+
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
 };
 
 // Do not edit below this line
